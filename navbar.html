@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #screen{
+            height: 660px;
+            width: 100%;
+            border: 5px solid red;
+        }
+        #navbar{
+            height: 100px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            border: 5px solid red;
+        }
+        #body{
+            height: 400px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            border: 5px solid red;
+        }
+        #body{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #body>div:nth-child(1){
+            width: 20%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        #body>div:nth-child(2){
+            width: 40%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        #body>div:nth-child(3){
+            width: 20%;
+            height: 100%;
+            border: 1px solid red;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="screen">
+        <div id="navbar">
+
+        </div>
+        <div id="body">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
+
 </html>
