@@ -2,53 +2,434 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>linkedin</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
         }
-        #screen{
+
+        #screen {
             height: 660px;
             width: 100%;
             border: 5px solid red;
         }
-        #navbar{
+
+        #navbar {
             height: 100px;
             width: 90%;
             margin: auto;
             margin-top: 50px;
             border: 5px solid red;
         }
-        #body{
+
+        #body {
             height: 400px;
             width: 90%;
             margin: auto;
             margin-top: 50px;
             border: 5px solid red;
         }
-        #body{
+
+        #body {
             display: flex;
             justify-content: space-evenly;
         }
-        #body>div:nth-child(1){
+
+        #body>div:nth-child(1) {
             width: 20%;
             height: 100%;
             border: 1px solid red;
         }
-        #body>div:nth-child(2){
+
+        #body>div:nth-child(2) {
             width: 40%;
             height: 100%;
             border: 1px solid red;
         }
-        #body>div:nth-child(3){
+
+        #body>div:nth-child(3) {
             width: 20%;
             height: 100%;
             border: 1px solid red;
         }
+
+        @media screen and (max-width:400px) {
+            #body {
+                flex-direction: column;
+            }
+
+            #body>div:nth-child(1) {
+                width: 90%;
+                margin: auto;
+                height: 100px;
+                border: 1px solid green;
+            }
+
+            #body>div:nth-child(2) {
+                width: 90%;
+                margin: auto;
+                height: 100px;
+                border: 1px solid green;
+            }
+
+            #body>div:nth-child(3) {
+                width: 90%;
+                margin: auto;
+                height: 100px;
+                border: 1px solid green;
+            }
+
+            #my-info>div:nth-child(2),
+            div:nth-child(3),
+            div:nth-child(4) {
+                display: none;
+            }
+        }
+
+        #my-info>div:nth-child(1) {
+            height: 140px;
+            /* border: 1px solid red; */
+        }
+
+        #my-info>div:nth-child(2) {
+            height: 100px;
+            /* border: 1px solid red; */
+        }
+
+        #my-info>div:nth-child(3) {
+            height: 60px;
+            /* border: 1px solid red; */
+        }
+
+        #my-info>div:nth-child(4) {
+            height: 60px;
+            /* border: 1px solid red; */
+        }
+
+        #my-info>div:nth-child(1)>div:nth-child(1)>div {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            margin: 15px;
+        }
+
+        #my-info>div:nth-child(1)>div:nth-child(1)>div>img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            margin-left: 90px;
+        }
+
+        #my-info>div:nth-child(1)>div:nth-child(2) {
+            text-align: center;
+        }
+
+        #my-info>div:nth-child(1)>div:nth-child(2)>h1 {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        #my-info>div:nth-child(1)>div:nth-child(2)>p {
+            font-size: 14px;
+            opacity: 0.5;
+        }
+
+        #my-info>div:nth-child(1) {
+            border-bottom: 1px solid black;
+        }
+
+        #my-info>div:nth-child(2) {
+            border-bottom: 1px solid black;
+        }
+
+        #my-info>div:nth-child(3) {
+            border-bottom: 1px solid black;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(1) {
+            height: 60px;
+            /* border: 1px solid red; */
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>h5 {
+            margin-left: 10px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>h6 {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #5a9fe3;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>h5 {
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(2)>h5 {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        #my-info>div:nth-child(2)>div:nth-child(2)>h6 {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #5a9fe3;
+        }
+
+        #my-info>div:nth-child(3)>div {
+            margin-top: 20px;
+        }
+
+        #my-info>div:nth-child(3)>div>h5 {
+            font-size: 14px;
+            margin-left: 10px;
+            opacity: 0.6;
+        }
+
+        #my-info>div:nth-child(3)>div>h6 {
+            font-size: 14px;
+            margin-left: 30px;
+        }
+
+        #my-info>div:nth-child(4)>div {
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        #search>div:nth-child(1) {
+            height: 120px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(1) {
+            height: 60px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>img {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+            height: 50px;
+            width: 90%;
+            border: 1px solid gray;
+            border-radius: 30px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>input {
+            border: none;
+            font-size: 14px;
+            margin-top: 18px;
+            margin-left: 30px;
+            color: gray;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 60px;
+            width: 100%;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            width: 25%;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div>i {
+            margin-top: 6px;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>i {
+            color: #5a9fe3;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>i {
+            color: #5f9b41;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div:nth-child(3)>i {
+            color: #c37d16;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>i {
+            color: #e16745;
+        }
+
+        #search>div:nth-child(1)>div:nth-child(2)>div>h4 {
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+        #search>div:nth-child(2){
+            height: 280px;
+            width: 100%;
+        }
+        #search>div:nth-child(2)>div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            height: 20px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+        #search>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+            margin-left: 20px;
+        }
+        #search>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+            margin-right: 20px;
+        }
+          
+        #search>div:nth-child(2)>div:nth-child(2){
+            display: flex;
+            /* justify-content: center; */
+            height: 80px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+        #search>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img{
+             height: 50px;
+             width: 50px;
+             margin-top: 15px;
+             margin-left: 15px;
+        }
+        #search>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #search>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>h4{
+            font-size: 16px;
+        }
+        #search>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+            height: 30px;
+            width: 80px;
+            border: 1px solid #5a9fe3;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+        #search>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>button{
+            background-color: white;
+            border: none;
+            font-size: 14px;
+            margin-top: 7px;
+            margin-left: 15px;
+            color: #5a9fe3;
+        }
+        #search>div:nth-child(2)>div:nth-child(3){
+            display: flex;
+            height: 80px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+        #search>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>img{
+             height: 50px;
+             width: 50px;
+             margin-left: 15px;
+             margin-top: 15px;
+        }
+        #search>div:nth-child(2)>div:nth-child(3)>div:nth-child(2){
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #search>div:nth-child(2)>div:nth-child(3)>div:nth-child(3){
+            height: 30px;
+            width: 80px;
+            border: 1px solid #5a9fe3;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 235px;
+        }
+        #search>div:nth-child(2)>div:nth-child(3)>div:nth-child(3)>button{
+            background-color: white;
+            border: none;
+            font-size: 14px;
+            margin-top: 7px;
+            margin-left: 15px;
+            color: #5a9fe3;
+        }
+        #search>div:nth-child(2)>div:nth-child(4){
+            display: flex;
+            height: 80px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+        #search>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)>img{
+             height: 50px;
+             width: 50px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        #search>div:nth-child(2)>div:nth-child(4)>div:nth-child(2){
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #search>div:nth-child(2)>div:nth-child(4)>div:nth-child(3){
+            height: 30px;
+            width: 80px;
+            border: 1px solid #5a9fe3;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 185px;
+        }
+        #search>div:nth-child(2)>div:nth-child(4)>div:nth-child(3)>button{
+            background-color: white;
+            border: none;
+            font-size: 14px;
+            margin-top: 7px;
+            margin-left: 15px;
+            color: #5a9fe3;
+        }
+        #search>div:nth-child(2)>div:nth-child(5){
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            width: 100%;
+        }
+        #search>div:nth-child(2)>div:nth-child(5)>i{
+            margin-top: 5px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 
@@ -58,8 +439,125 @@
 
         </div>
         <div id="body">
-            <div></div>
-            <div></div>
+            <div id="my-info">
+                <div>
+                    <div>
+                        <div>
+                            <img src="sneha.jpg" alt="my image">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>Sneha Rajpurkar</h1>
+                        <p>Student | Engineer</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <h5>Connections</h5>
+                            <h6>3</h6>
+                        </div>
+                        <div>
+                            <h5>Grow your network</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Invitation</h5>
+                        <h6>1</h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Access exclusive tools and insights</h5>
+                        <h6>Try Premium for free</h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>My items</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <div>
+                    <div>
+                        <div><img src="sneha.jpg" alt="image"></div>
+                        <div><input type="text" placeholder="Start a post"></div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-image"></i>
+                            <h4>Photos</h4>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-youtube"></i>
+                            <h4>Video</h4>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-calendar"></i>
+                            <h4>Events</h4>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-newspaper"></i>
+                            <h4>Write article</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h4>Recommended for you</h4>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
+                            alt="google">
+                        </div>
+                        <div>
+                            <h4>Google</h4>
+                            <h5>Technology, Information and Internet</h5>
+                        </div>
+                        <div>
+                            <button>+Follow</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png"
+                            alt="geekforgeek">
+                        </div>
+                        <div>
+                            <h4>GeeksforGeeks</h4>
+                            <h5>Software Development</h5>
+                        </div>
+                        <div>
+                            <button>+Follow</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUec-mgpdj-U6gHXDXgH8jaNHkorM30vAVDg&usqp=CAU" alt="tcs">
+                        </div>
+                        <div>
+                            <h4>Tata Consaltancy Services</h4>
+                            <h5>IT Services and IT Consulting</h5>
+                        </div>
+                        <div>
+                            <button>+Follow</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>View all recommendations</h4>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
             <div></div>
         </div>
     </div>
