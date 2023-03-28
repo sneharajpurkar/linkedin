@@ -14,21 +14,13 @@
         }
 
         #screen {
-            height: 800px;
+            height: 1250px;
             width: 100%;
-            border: 1px solid red;
             background-color: #f3f2ef;
         }
 
-        #navbar {
-            height: 100px;
-            width: 100%;
-            margin: auto;
-            border: 1px solid red;
-        }
-
         #body {
-            height: 400px;
+            height: 200px;
             width: 90%;
             margin: auto;
             margin-top: 25px;
@@ -42,47 +34,183 @@
 
         #body>div:nth-child(1) {
             width: 20%;
-            height: 100%;
+            height: 200%;
             border: 1px solid gray;
             border-radius: 20px;
         }
 
         #body>div:nth-child(2) {
             width: 40%;
-            height: 100%;
+            height: 270%;
         }
 
         #body>div:nth-child(3) {
             width: 20%;
-            height: 100%;
+            height: 250%;
             border: 1px solid gray;
             border-radius: 20px;
         }
 
-        @media screen and (max-width:400px) {
+        #navbar {
+            width: 100%;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        #navbar-left {
+            width: 350px;
+            height: 50px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #navbar-left>div:nth-child(1)>i {
+            height: 40px;
+            width: 40px;
+            font-size: 40px;
+            color: #0a66c2;
+            margin-top: 5px;
+            /* border: 1px solid blue; */
+        }
+
+        #navbar-left>div:nth-child(2) {
+            height: 35px;
+            width: 260px;
+            background-color: #eef3f8;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #navbar-left>div:nth-child(2)>i {
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+
+        #navbar-left>div:nth-child(2)>input {
+            border: none;
+            outline: none;
+            background-color: #eef3f8;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        #navbar-right {
+            display: flex;
+            height: 50px;
+            width: 520px;
+            margin-left: 20px;
+        }
+
+        #navbar-right>div {
+            height: 50px;
+            width: 120px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        #navbar-right>div>i {
+            height: 25px;
+            width: 25px;
+            font-size: 25px;
+            color: rgb(96, 96, 96);
+            margin-left: 29px;
+        }
+
+        #navbar-right>div>p {
+            text-align: center;
+            font-size: 15px;
+            color: rgb(96, 96, 96);
+        }
+
+        @media screen and (max-width:410px) {
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            #navbar {
+                width: 400px;
+                display: flex;
+                justify-content: left;
+            }
+
+            #navbar-left {
+                display: flex;
+                width: 50px;
+                margin-left: 10px;
+            }
+
+            #navbar-left>div:nth-child(1) {
+                height: 20px;
+                width: 20px;
+                margin-top: 4px;
+            }
+
+            #navbar-left>div:nth-child(2) {
+                margin-left: 35px;
+                background-color: white;
+            }
+
+            #navbar-left>div:nth-child(2)>i {
+                background-color: white;
+                margin-left: 5px;
+                height: 30px;
+                width: 20px;
+                font-size: 22px;
+            }
+
+            #navbar-left>div:nth-child(2)>input {
+                display: none;
+            }
+
+            #navbar-right {
+                width: 100px;
+            }
+
+            #navbar-right>div {
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+
+            #navbar-right>div>i {
+                height: 20px;
+                width: 20px;
+            }
+
+            #navbar-right>div>p {
+                display: none;
+            }
+
+            #screen {
+                height: 1600px;
+                width: 400px;
+                background-color: #f3f2ef;
+            }
+
             #body {
                 flex-direction: column;
+                height: 1200px;
             }
 
             #body>div:nth-child(1) {
-                width: 90%;
-                margin: auto;
-                height: 100px;
-                border: 1px solid green;
+                width: 100%;
+                margin-top: 250px;
+                height: 150px;
             }
 
             #body>div:nth-child(2) {
-                width: 90%;
-                margin: auto;
-                height: 100px;
-                border: 1px solid green;
+                width: 100%;
+                margin-top: 30px;
+                height: 800px;
+                /* border: 1px solid red; */
             }
 
             #body>div:nth-child(3) {
-                width: 90%;
-                margin: auto;
-                height: 100px;
-                border: 1px solid green;
+                width: 100%;
+                margin-top: 50px;
+                height: 500px;
             }
 
             #my-info>div:nth-child(2),
@@ -90,10 +218,85 @@
             div:nth-child(4) {
                 display: none;
             }
+
+            #search>div:nth-child(1)>div:nth-child(2) {
+                display: flex;
+                justify-content: left;
+                margin-top: 10px;
+            }
+
+            #search>div:nth-child(1)>div:nth-child(2)>div {
+                height: 30px;
+            }
+
+            #search>div:nth-child(1)>div:nth-child(2)>div>i {
+                height: 15px;
+                width: 15px;
+            }
+
+            #search>div:nth-child(3) {
+                display: contents;
+                /* border: 1px solid gray; */
+                height: 500px;
+                width: 110%;
+            }
+
+            #post {
+                display: content;
+            }
+
+            #post>div:nth-child(1) {
+                height: 500px;
+                width: 100%;
+                margin-top: 40px;
+                background-color: white;
+            }
+
+            #post>div:nth-child(2) {
+                height: 800px;
+                width: 100%;
+                background-color: white;
+
+            }
+
+            #post>div:nth-child(4) {
+                height: 500px;
+                width: 100%;
+                background-color: white;
+            }
+
+            #post>div:nth-child(4)>div>h5 {
+                display: none;
+            }
+
+            #post>div:nth-child(5) {
+                height: 600px;
+                width: 100%;
+                background-color: white;
+            }
+            #post>div:nth-child(5)>div>h4{
+                margin-top: -10px;
+            }
+            #feed {
+                display: contents;
+            }
+            #feed>div{
+                background-color: white;
+                height: 450px;
+                width: 100%;
+            }
+            #feed>div:nth-child(1){
+                margin-top: 100px;
+                width: 90%;
+            }
+
+
         }
-        #my-info{
+
+        #my-info {
             background-color: white;
         }
+
         #my-info>div:nth-child(1) {
             height: 140px;
             /* border: 1px solid red; */
@@ -221,9 +424,7 @@
             margin-left: 10px;
             font-size: 16px;
         }
-        /* #search{
-            background-color: white;
-        } */
+
         #search>div:nth-child(1) {
             height: 120px;
             width: 100%;
@@ -245,7 +446,7 @@
             width: 50px;
             border-radius: 25px;
             margin-top: 5px;
-            margin-left: 25px;
+            margin-left: 60px;
         }
 
         #search>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
@@ -279,6 +480,7 @@
             height: 60px;
             width: 25%;
         }
+
         #search>div:nth-child(1)>div:nth-child(2)>div>i {
             margin-top: 6px;
             font-size: 25px;
@@ -460,30 +662,228 @@
             margin-left: 5px;
             font-size: 14px;
         }
-        #feed>div:nth-child(1){
+
+        #post {
+            height: 650px;
+            width: 100%;
+            border-radius: 20px;
+            margin-top: 40px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+
+        #post>div:nth-child(1) {
+            height: 80px;
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        #post>div:nth-child(1)>div {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        #post>div:nth-child(1)>div:nth-child(1)>img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #post>div:nth-child(1)>div:nth-child(2)>h5 {
+            color: gray;
+        }
+
+        #post>div:nth-child(1)>div:nth-child(3) {
+            margin-top: 30px;
+            margin-right: 15px;
+        }
+
+        #post>div:nth-child(1)>div:nth-child(3)>button {
+            color: #5a9fe3;
+            border-color: #0a66c2;
+            font-size: 14px;
+        }
+
+        #post>div:nth-child(2) {
+            height: 90px;
+        }
+
+        #post>div:nth-child(2)>h4 {
+            opacity: 0.6;
+            font-size: 12px;
+            margin-top: 6px;
+            margin-left: 15px;
+        }
+
+        #post>div:nth-child(2)>h4:nth-child(4) {
+            color: #5a9fe3;
+        }
+
+        #post>div:nth-child(3) {
+            height: 260px;
+        }
+
+        #post>div:nth-child(3)>img {
+            height: 260px;
+            width: 100%;
+            border: 0.5px solid gray;
+        }
+
+        #post>div:nth-child(4) {
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid gray;
+        }
+
+        #post>div:nth-child(4)>div {
+            height: 50px;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        #post>div:nth-child(4)>div>i {
+            margin-top: 15px;
+        }
+
+        #post>div:nth-child(4)>div>h5 {
+            margin-top: 15px;
+        }
+
+        #post>div:nth-child(5) {
+            height: 95px;
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        #post>div:nth-child(5)>div {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        #post>div:nth-child(5)>div:nth-child(1)>img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #post>div:nth-child(5)>div:nth-child(2)>h4 {
+            opacity: 0.6;
+        }
+
+        #post>div:nth-child(5)>div:nth-child(2)>div>button {
+            color: gray;
+            border-color: gray;
+            font-size: medium;
+        }
+
+        #post>div:nth-child(6) {
+            width: 100%;
+            height: 65px;
+            text-align: center;
+        }
+
+        #post>div:nth-child(6)>button {
+            height: 30px;
+            width: 120px;
+            color: #5a9fe3;
+            border-color: #5a9fe3;
+            margin-top: 15px;
+        }
+
+        #feed {
+            background-color: white;
+        }
+
+        #feed>div:nth-child(1) {
             height: 13%;
             width: 100%;
-            border: 1px solid red;
+            border-bottom: 1px solid gray;
+            display: flex;
         }
-        #feed>div:nth-child(2){
+
+        #feed>div:nth-child(1)>h4 {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        #feed>div:nth-child(2) {
             height: 25%;
             width: 100%;
-            border: 1px solid red;
+            border-bottom: 1px solid gray;
+            display: flex;
         }
-        #feed>div:nth-child(3){
+
+        #feed>div:nth-child(2)>div:nth-child(1) {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        #feed>div:nth-child(2)>div:nth-child(1)>img {
+            height: 70px;
+            width: 70px;
+        }
+
+        #feed>div:nth-child(2)>div:nth-child(2) {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #feed>div:nth-child(3) {
             height: 25%;
             width: 100%;
-            border: 1px solid red;
+            border-bottom: 1px solid gray;
+            display: flex;
         }
-        #feed>div:nth-child(4){
+
+        #feed>div:nth-child(3)>div:nth-child(1) {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        #feed>div:nth-child(3)>div:nth-child(1)>img {
+            height: 70px;
+            width: 70px;
+        }
+
+        #feed>div:nth-child(3)>div:nth-child(2) {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #feed>div:nth-child(4) {
             height: 25%;
             width: 100%;
-            border: 1px solid red;
+            border-bottom: 1px solid gray;
+            display: flex;
         }
-        #feed>div:nth-child(5){
+
+        #feed>div:nth-child(4)>div:nth-child(1) {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        #feed>div:nth-child(4)>div:nth-child(1)>img {
+            height: 70px;
+            width: 70px;
+        }
+
+        #feed>div:nth-child(4)>div:nth-child(2) {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #feed>div:nth-child(5) {
             height: 10%;
             width: 100%;
-            border: 1px solid red;
+        }
+
+        #feed>div:nth-child(5)>div {
+            margin-top: 10px;
+            justify-content: center;
+            display: flex;
         }
     </style>
 </head>
@@ -491,7 +891,45 @@
 <body>
     <div id="screen">
         <div id="navbar">
-
+            <div id="navbar-left">
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div id="navbar-right">
+                <div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <p>My Network</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Jobs</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>Messaging</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Notifications</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Me</p>
+                </div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <div id="body">
             <div id="my-info">
@@ -613,17 +1051,74 @@
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
+                <div id="post">
+                    <div>
+                        <div>
+                            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/reporter/202107/nitin-gadkari-topic-pages-1200x768.jpg?VersionId=vKNKNXti2_Uitiwyw0IwVH1QpCOSzuVa"
+                                alt="gadakari">
+                        </div>
+                        <div>
+                            <h4>Nitin Gadakari</h4>
+                            <h5>Minister of Road Transport & Highways, Government of India at Government of India</h5>
+                        </div>
+                        <div>
+                            <button>+Follow</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Creating history, we are the inaugural Women's U-19 T20 World Cup Champion.</h4>
+                        <h4>Congratulations to our daughters for accomplishing new records.</h4>
+                        <h4>We're so proud of you!!</h4>
+                        <h4>#U19T20WorldCup#TeamIndia</h4>
+                    </div>
+                    <div>
+                        <img src="https://img.etimg.com/thumb/msid-97422289,width-560,height-420,imgsize-59882/india-wins-womens-u19-t20-world-cup-beats-england-by-7-wickets-bcci-announces-rs-5-cr-reward.jpg"
+                            alt="worldcup">
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <h5>Like</h5>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <h5>Comment</h5>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-repeat"></i>
+                            <h5>Repost</h5>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <h5>Send</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/reporter/202107/nitin-gadkari-topic-pages-1200x768.jpg?VersionId=vKNKNXti2_Uitiwyw0IwVH1QpCOSzuVa"
+                                alt="gadakari">
+                        </div>
+                        <div>
+                            <h4>Follow Nitin to see more posts from them</h4>
+                            <h4>Get fresh perspectives by following creators on LinkedIn</h4>
+                            <div>
+                                <button>+Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button>See New Post</button>
+                    </div>
+                </div>
             </div>
             <div id="feed">
                 <div>
-                    <div>
-                        <h4>Add to your feed</h4>
-                    </div>
-                    <div><i class="fa-solid fa-info"></i></div>
+                    <h4>Add to your feed</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="tcs">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUec-mgpdj-U6gHXDXgH8jaNHkorM30vAVDg&usqp=CAU"
+                            alt="tcs">
                     </div>
                     <div>
                         <h4>Tata consaltancy and services</h4>
@@ -635,7 +1130,8 @@
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="sayanti">
+                        <img src="https://img.freepik.com/free-photo/smiling-confident-businesswoman-posing-with-arms-folded_1262-20950.jpg?w=900&t=st=1675785594~exp=1675786194~hmac=67aae59ebccb17fa276113e8c650a2d6e8cb61d852ad076849e05a517edd4c8d"
+                            alt="sayanti">
                     </div>
                     <div>
                         <h4>Sayanti Mukherjee</h4>
@@ -647,7 +1143,8 @@
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="Vaishnavi">
+                        <img src="https://img.freepik.com/free-photo/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space_23-2148767055.jpg?w=900&t=st=1675785629~exp=1675786229~hmac=28fffdac4d898e3352b50cd2d3ee38f08267fb391349b728bb85eb9c699172d3"
+                            alt="Vaishnavi">
                     </div>
                     <div>
                         <h4>Vaishnavi Nambiar</h4>
@@ -658,10 +1155,14 @@
                     </div>
                 </div>
                 <div>
-                    <h4>Veiw for all recommendations</h4>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <div>
+                        <h4>Veiw for all recommendations</h4>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 </body>
